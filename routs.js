@@ -7,7 +7,7 @@ var AppRouter =Backbone.Router.extend({
         this.headerView = new HeaderView();
         $('.header').html(this.headerView.el);
       this.bodyView = new fotterview();
-        $('.container').html(this.bodyView.el);
+        $('.container').append(this.bodyView.el);
     },
 
 	HeaderView: function(page) {
